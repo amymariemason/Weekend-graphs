@@ -414,7 +414,7 @@ ggplot(temp2, aes(x=Hour, color=Day)) +
     geom_path(aes(y=upper)) + geom_path(aes(y=lower)) +
 #    scale_y_continuous(limits = c(0, 65 )) +
     xlab ("Hour of Admission") +
-    ylab ("Eosinophils 10^{9}/L \n 10th and 90th percentiles") +
+    ylab (expression(atop("Eosinophils 10"^9~"/L", "10th and 90th percentiles")))+
     geom_hline(aes(yintercept = 0, color="Reference range"))+
     geom_hline( aes(yintercept = 0.5,color="Reference range"))+
     theme(axis.line = element_line(colour = "black"),

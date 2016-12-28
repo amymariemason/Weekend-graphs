@@ -33,8 +33,8 @@ lowref<-35
 highref<-50
 title1<-"Albumin \n percentages outside reference range"
 title2<-"Albumin \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\albumin_ref1.png"
-savename2<-"D:\\Weekend_graphs\\albumin_ref2.png"
+savename <- "D:\\Weekend_graphs\\albumin_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\albumin_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -76,7 +76,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -93,7 +93,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 ###### ALK
@@ -108,8 +108,8 @@ lowref<-95
 highref<-320
 title1<-"Alkaline Phosphatase \n percentages outside reference range"
 title2<-"Alkaline Phosphatase \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\alk_ref1.png"
-savename2<-"D:\\Weekend_graphs\\alk_ref2.png"
+savename <- "D:\\Weekend_graphs\\alk_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\alk_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -151,7 +151,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -168,7 +168,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -184,8 +184,8 @@ lowref<-10
 highref<-45
 title1<-"Alanine Aminotransferase \n percentages outside reference range"
 title2<-"Alanine Aminotransferase \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\alt_ref1.png"
-savename2<-"D:\\Weekend_graphs\\alt_ref2.png"
+savename <- "D:\\Weekend_graphs\\alt_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\alt_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -227,7 +227,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -244,7 +244,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -260,8 +260,8 @@ lowref<-15
 highref<-42
 title1<-"Aspartate transaminase \n percentages outside reference range"
 title2<-"Aspartate transaminase \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\ast_ref1.png"
-savename2<-"D:\\Weekend_graphs\\ast_ref2.png"
+savename <- "D:\\Weekend_graphs\\ast_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\ast_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -303,7 +303,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -320,7 +320,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -336,8 +336,8 @@ lowref<-3
 highref<-7
 title1<-"Bilirubin \n percentages outside reference range"
 title2<-"Bilirubin \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\bil_ref1.png"
-savename2<-"D:\\Weekend_graphs\\bil_ref2.png"
+savename <- "D:\\Weekend_graphs\\bil_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\bil_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -379,7 +379,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -396,7 +396,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -413,8 +413,8 @@ lowref<-54
 highref<-150
 title1<-"Creatinine \n percentages outside reference range"
 title2<-"Creatinine \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\crt_ref1.png"
-savename2<-"D:\\Weekend_graphs\\crt_ref2.png"
+savename <- "D:\\Weekend_graphs\\crt_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\crt_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -456,7 +456,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -473,7 +473,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 ##### CRP
@@ -488,8 +488,8 @@ lowref<-0
 highref<-8
 title1<-"C-Reactive Protein\n percentages outside reference range"
 title2<-"C-Reactive Protein \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\crp_ref1.png"
-savename2<-"D:\\Weekend_graphs\\crp_ref2.png"
+savename <- "D:\\Weekend_graphs\\crp_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\crp_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -531,7 +531,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -548,7 +548,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 ##### EOS
@@ -563,8 +563,8 @@ lowref<-0
 highref<-0.5
 title1<-"Eosinophils \n percentages outside reference range"
 title2<-"Eosinophils \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\eos_ref1.png"
-savename2<-"D:\\Weekend_graphs\\eos_ref2.png"
+savename <- "D:\\Weekend_graphs\\eos_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\eos_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -606,7 +606,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -623,7 +623,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 ##### HB
@@ -638,8 +638,8 @@ lowref<-13
 highref<-17
 title1<-"Haemoglobin \n percentages outside reference range"
 title2<-"Haemoglobin \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\hb_ref1.png"
-savename2<-"D:\\Weekend_graphs\\hb_ref2.png"
+savename <- "D:\\Weekend_graphs\\hb_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\hb_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -681,7 +681,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -698,7 +698,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -714,8 +714,8 @@ lowref<-1
 highref<-4
 title1<-"Lymphocytes \n percentages outside reference range"
 title2<-"Lymphocytes \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\lym_ref1.png"
-savename2<-"D:\\Weekend_graphs\\lym_ref2.png"
+savename <- "D:\\Weekend_graphs\\lym_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\lym_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -757,7 +757,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -774,7 +774,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -790,8 +790,8 @@ lowref<-0.2
 highref<-1
 title1<-"Monocytes \n percentages outside reference range"
 title2<-"Monocytes \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\mono_ref1.png"
-savename2<-"D:\\Weekend_graphs\\mono_ref2.png"
+savename <- "D:\\Weekend_graphs\\mono_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\mono_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -833,7 +833,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -850,7 +850,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -866,8 +866,8 @@ lowref<-2
 highref<-7
 title1<-"Neutrophils \n percentages outside reference range"
 title2<-"Neutrophils \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\neu_ref1.png"
-savename2<-"D:\\Weekend_graphs\\neu_ref2.png"
+savename <- "D:\\Weekend_graphs\\neu_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\neu_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -909,7 +909,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -926,7 +926,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -942,8 +942,8 @@ lowref<-0.7
 highref<-1.45
 title1<-"Alkaline Phosphatase \n percentages outside reference range"
 title2<-"Alkaline Phosphatase \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\pho_ref1.png"
-savename2<-"D:\\Weekend_graphs\\pho_ref2.png"
+savename <- "D:\\Weekend_graphs\\pho_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\pho_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -985,7 +985,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -1002,7 +1002,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -1018,8 +1018,8 @@ lowref<-150
 highref<-400
 title1<-"Platelets \n percentages outside reference range"
 title2<-"Platelets \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\plt_ref1.png"
-savename2<-"D:\\Weekend_graphs\\plt_ref2.png"
+savename <- "D:\\Weekend_graphs\\plt_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\plt_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -1061,7 +1061,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -1078,7 +1078,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -1094,8 +1094,8 @@ lowref<-3.5
 highref<-5
 title1<-"Potassium \n percentages outside reference range"
 title2<-"Potassium \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\pot_ref1.png"
-savename2<-"D:\\Weekend_graphs\\pot_ref2.png"
+savename <- "D:\\Weekend_graphs\\pot_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\pot_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -1137,7 +1137,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -1154,7 +1154,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -1170,8 +1170,8 @@ lowref<-135
 highref<-145
 title1<-"Sodium \n percentages outside reference range"
 title2<-"Sodium \n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\sod_ref1.png"
-savename2<-"D:\\Weekend_graphs\\sod_ref2.png"
+savename <- "D:\\Weekend_graphs\\sod_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\sod_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -1213,7 +1213,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -1230,7 +1230,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 
@@ -1247,8 +1247,8 @@ lowref<-2.5
 highref<-6.7
 title1<-"Urea \n percentages outside reference range"
 title2<-"Urea\n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\ure_ref1.png"
-savename2<-"D:\\Weekend_graphs\\ure_ref2.png"
+savename <- "D:\\Weekend_graphs\\ure_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\ure_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -1290,7 +1290,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -1307,7 +1307,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
 
 ##### WCL
@@ -1322,8 +1322,8 @@ lowref<-4
 highref<-11
 title1<-"White Cell Count \n percentages outside reference range"
 title2<-"White Cell Count\n percentage outside reference range"
-savename <- "D:\\Weekend_graphs\\wcl_ref1.png"
-savename2<-"D:\\Weekend_graphs\\wcl_ref2.png"
+savename <- "D:\\Weekend_graphs\\wcl_ref1.svg"
+savename2<-"D:\\Weekend_graphs\\wcl_ref2.svg"
 
 # set up variable for graph
 tempset$lower<-ifelse(tempset$result<lowref,1,0)
@@ -1365,7 +1365,7 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename)
+dev.copy(svg,savename)
 dev.off()
 
 # draw graph2
@@ -1382,5 +1382,5 @@ ggplot(temp2, aes(x=Hour, color=Day2)) +
         panel.background = element_blank(),
         legend.key = element_rect(colour = "transparent", fill = "white"))
 
-dev.copy(png,savename2)
+dev.copy(svg,savename2)
 dev.off()
